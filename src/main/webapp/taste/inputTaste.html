@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>개인 취향 테스트(GET)</title>
+	</head>
+	<body>
+<!-- 		일용자님의 개인 취향은 색깔은 빨강색을 좋아하고 동물은 강아지를 좋아하고 음식은 짜장면, 짬뽕입니다. -->
+		<h1>개인 취향 테스트(GET)</h1>
+		<p>당신의 취향을 테스트합니다.<br>
+		데이터 입력 후 확인 버튼을 누르세요.</p>
+ 		<form action="/tasteResult.do" method="get"> <!-- action 주소 유의 --> <!-- java -->
+<!-- 			<form action="/taste/tasteResult.jsp" method="get"> -->  <!-- jsp -->
+			이름은? <input type="text" name="userName" id=""><br><br>
+			좋아하는 색? 
+			<label for="red">빨강<input type="radio" name="color" id="red" value="red"></label>
+			<label for="blue">파랑<input type="radio" name="color" id="blue" value="blue"></label>
+			<label for="yellow">노랑<input type="radio" name="color" id="yellow" value="yellow"></label>
+			<label for="green">초록<input type="radio" name="color" id="green" value="green"></label>
+			<br><br>
+			좋아하는 동물은? 
+			<select name="animal" id="animal">
+				<option value="dog">강아지</option>
+				<option value="cat">고양이</option>
+				<option value="tiger">호랑이</option>
+				<option value="lion">사자</option>
+			</select> <br><br>
+			좋아하는 음식은?(모두 고르세요) 
+			<label for="food1">짜장면<input type="checkbox" name="food" id="food1" value="food1"></label>
+			<label for="food2">짬뽕<input type="checkbox" name="food" id="food2" value="food2"></label>
+			<label for="food3">탕수육<input type="checkbox" name="food" id="food3" value="food3"></label>
+			<label for="food4">양장피<input type="checkbox" name="food" id="food4" value="food4"></label>
+			<label for="food5">팔보채<input type="checkbox" name="food" id="food5" value="food5"></label>
+			<br><br>
+			<input type="submit" value="전송">
+			<input type="reset" value="취소">
+		</form>
+	</body>
+</html>

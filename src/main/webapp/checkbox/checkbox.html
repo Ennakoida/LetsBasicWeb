@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>체크박스 서블릿</title>
+	</head>
+	<body>
+		<h2>가고 싶은 관광지를 선택하세요(중복가능)</h2>
+		<form action="/checkboxResult.do" method="get">
+<!-- 			<form action="/checkbox/checkboxResult.jsp" method="get"> -->
+			<input type="checkbox" name="place" value="hawaii">하와이
+			<input type="checkbox" name="place" value="osaka">오사카
+			<input type="checkbox" name="place" value="borakai">보라카이
+			<input type="checkbox" name="place" value="cebu">쎄부
+			<input type="checkbox" name="place" value="saipan">사이판
+			<input type="submit" value="전송">
+			<input type="reset" value="초기화">
+		</form>
+	</body>
+</html>
